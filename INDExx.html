@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Management System | Cloud POS & Billing Suite</title>
+  <!-- Google Font & FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Core Layout Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Feature Specific Stylesheets -->
+  <link rel="stylesheet" href="features/billing-pos/billing.css">
+  <link rel="stylesheet" href="features/inventory-stock/inventory.css">
+  <link rel="stylesheet" href="features/order-delivery/delivery.css">
+  <link rel="stylesheet" href="features/crm-loyalty/crm.css">
+  <link rel="stylesheet" href="features/analytics-reporting/analytics.css">
+  <link rel="stylesheet" href="features/staff-hr/staff.css">
+  <link rel="stylesheet" href="features/marketing-promotions/marketing.css">
+  <link rel="stylesheet" href="features/mobile-cloud/cloud.css">
+  <link rel="stylesheet" href="features/security-compliance/security.css">
+  <link rel="stylesheet" href="features/advanced-ai/advanced.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. MARKETING LANDING PAGE
+       ========================================================================== -->
+  <div id="marketing-page">
+    <header class="landing-header">
+      <div class="logo-container">
+        <div class="logo-icon"><i class="fa-solid fa-utensils"></i></div>
+        <span>RMS</span>
+      </div>
+      <ul class="landing-nav">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#calculator">ROI Calculator</a></li>
+        <li><a href="#demo">Book Demo</a></li>
+      </ul>
+      <div class="cta-btn-group">
+        <button class="btn-primary" onclick="window.RMSApp.switchToPortal()"><i class="fa-solid fa-rocket"></i> Launch Demo</button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-tag">Cloud-Based & Mobile-First POS</div>
+        <h1 class="hero-title">Omnichannel <span>Restaurant Management</span> System</h1>
+        <p class="hero-desc">Streamline front-of-house billing, recipe costs, and multi-location inventory. Zero aggregators commissions ordering, integrated QR payments, and GST compliance.</p>
+        <div class="cta-btn-group">
+          <button class="btn-accent" onclick="window.RMSApp.switchToPortal()"><i class="fa-solid fa-desktop"></i> Try Live System Portal</button>
+          <a href="#demo" class="btn-outline">Book Free Demo</a>
+        </div>
+      </div>
+      <div class="hero-mockup-container">
+        <div class="hero-dashboard-mockup">
+          <div class="mockup-header">
+            <span class="mockup-dot"></span>
+            <span class="mockup-dot"></span>
+            <span class="mockup-dot"></span>
+          </div>
+          <div class="mockup-screen">
+            <div class="mockup-kpis">
+              <div class="mockup-kpi">
+                <div style="font-size:0.7rem; color:#64748b;">Daily Revenue</div>
+                <div style="font-size:0.95rem; font-weight:700;">₹42,850</div>
+              </div>
+              <div class="mockup-kpi">
+                <div style="font-size:0.7rem; color:#64748b;">Active KOTs</div>
+                <div style="font-size:0.95rem; font-weight:700; color:#f97316;">8 Pending</div>
+              </div>
+              <div class="mockup-kpi">
+                <div style="font-size:0.7rem; color:#64748b;">Sync Status</div>
+                <div style="font-size:0.95rem; font-weight:700; color:#22c55e;"><i class="fa-solid fa-cloud-arrow-up"></i> Online</div>
+              </div>
+            </div>
+            <div class="mockup-chart-box">
+              <div style="font-size:0.75rem; font-weight:700; color:#1e293b; margin-bottom:5px;">Real-time Sales Curve</div>
+              <svg viewBox="0 0 300 80" width="100%" height="80%" xmlns="http://www.w3.org/2000/svg">
+                <polyline fill="none" stroke="#0ea5e9" stroke-width="2.5" points="10,60 50,45 90,55 130,30 170,40 210,15 250,25 290,5" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted By Logos -->
+    <section class="logos-section">
+      <h4 class="logos-title">Trusted by leading food brands & cloud kitchens</h4>
+      <div class="logos-grid">
+        <div class="brand-logo-grayscale"><i class="fa-solid fa-pizza-slice"></i> Urban Bites</div>
+        <div class="brand-logo-grayscale"><i class="fa-solid fa-mug-hot"></i> Coffee & Co</div>
+        <div class="brand-logo-grayscale"><i class="fa-solid fa-burger"></i> Burger Barn</div>
+        <div class="brand-logo-grayscale"><i class="fa-solid fa-ice-cream"></i> Dessert Lounge</div>
+      </div>
+    </section>
+
+    <!-- Features Overview -->
+    <section id="features" class="features-section">
+      <div class="section-header">
+        <h2 class="section-title">Core Operations Management</h2>
+        <p class="section-subtitle">A centralized, high-efficiency ecosystem built to manage your restaurant's lifecycle.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-box-card">
+          <div class="feature-box-icon"><i class="fa-solid fa-cash-register"></i></div>
+          <h3 class="feature-box-title">Touch POS Billing</h3>
+          <p class="feature-box-desc">Category menu grids, modifiers management, split payments, table layouts, and offline billing queues.</p>
+        </div>
+        <div class="feature-box-card">
+          <div class="feature-box-icon"><i class="fa-solid fa-warehouse"></i></div>
+          <h3 class="feature-box-title">Stock & Cost Recipes</h3>
+          <p class="feature-box-desc">Automated ingredient levels tracking, low threshold reorder POs, waste records, and cost margins.</p>
+        </div>
+        <div class="feature-box-card">
+          <div class="feature-box-icon"><i class="fa-solid fa-truck"></i></div>
+          <h3 class="feature-box-title">Order & Delivery Channels</h3>
+          <p class="feature-box-desc">Aggregators Swiggy/Zomato unified interface, direct online QR orders, and live delivery status timelines.</p>
+        </div>
+        <div class="feature-box-card">
+          <div class="feature-box-icon"><i class="fa-solid fa-users"></i></div>
+          <h3 class="feature-box-title">SaaS CRM & Marketing</h3>
+          <p class="feature-box-desc">Visits tracker, tiered loyalty points rewards, survey feedback sheets, and WhatsApp target promos.</p>
+        </div>
+        <div class="feature-box-card">
+          <div class="feature-box-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3 class="feature-box-title">Real-time Analytics</h3>
+          <p class="feature-box-desc">Revenue trend line graphs, hourly peak sales bars, and top-selling menu product listings.</p>
+        </div>
+        <div class="feature-box-card">
+          <div class="feature-box-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3 class="feature-box-title">Compliance & Audits</h3>
+          <p class="feature-box-desc">Automated GST calculation, FSSAI customized invoices, and developer-level console audit log history.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROI Calculator -->
+    <section id="calculator" class="calc-section">
+      <div class="section-header">
+        <h2 class="section-title">Save Commission Fees</h2>
+        <p class="section-subtitle">Calculate how much revenue you retain by routing direct online QR orders through RMS.</p>
+      </div>
+      <div class="calc-box">
+        <div class="calc-sliders">
+          <div class="calc-slider-group">
+            <div class="calc-label-row">
+              <span>Orders Per Day</span>
+              <span id="lbl-orders">40</span>
+            </div>
+            <input type="range" class="calc-slider-input" id="slide-orders" min="10" max="250" value="40">
+          </div>
+          <div class="calc-slider-group">
+            <div class="calc-label-row">
+              <span>Avg Order Value (₹)</span>
+              <span id="lbl-aov">350</span>
+            </div>
+            <input type="range" class="calc-slider-input" id="slide-aov" min="100" max="1500" value="350">
+          </div>
+        </div>
+        <div class="calc-result-box">
+          <div class="calc-savings-lbl">Estimated Monthly Savings</div>
+          <div class="calc-savings-value" id="calc-savings-val">₹84,000</div>
+          <p style="font-size:0.75rem; color:#94a3b8; line-height:1.4;">Based on saving 20% aggregator commissions against flat software subscription model.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demo Booking Form -->
+    <section id="demo" style="padding: 80px 8%; background: #f1f5f9;">
+      <div class="section-header">
+        <h2 class="section-title">Schedule a Consultation</h2>
+        <p class="section-subtitle">Provide details below to set up a personalized features walkthrough for your restaurant outlets.</p>
+      </div>
+      <div style="max-width: 500px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: var(--shadow-md);">
+        <form id="demo-form" onsubmit="event.preventDefault(); alert('Demo request received! Our sales agent will reach out in 24 hours.'); this.reset();">
+          <div class="rms-form-group">
+            <label class="rms-form-label">Full Name</label>
+            <input type="text" class="rms-form-control" required placeholder="E.g., Mansi">
+          </div>
+          <div class="rms-form-group">
+            <label class="rms-form-label">Restaurant Brand Name</label>
+            <input type="text" class="rms-form-control" required placeholder="E.g., Downtown Bistro">
+          </div>
+          <div class="rms-form-group">
+            <label class="rms-form-label">Phone Number</label>
+            <input type="tel" class="rms-form-control" required placeholder="E.g., +91 99999 88888">
+          </div>
+          <button class="btn-accent" style="width:100%; border-radius:6px; padding:12px; margin-top:10px;"><i class="fa-solid fa-calendar-check"></i> Book My Demo Slot</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="landing-footer">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo-container" style="color:white; margin-bottom:20px;">
+            <div class="logo-icon"><i class="fa-solid fa-utensils"></i></div>
+            <span>RMS Suite</span>
+          </div>
+          <p style="font-size:0.8rem; line-height:1.6;">Cloud restaurant management and mobile terminal billing tools engineered for modern bakeries, cafes, cloud kitchens, and restaurant chains.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Product Info</h5>
+          <ul class="footer-links">
+            <li><a href="#features">POS Billing</a></li>
+            <li><a href="#features">Inventory Control</a></li>
+            <li><a href="#features">CRM Loyalty</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Integrations & Info</h5>
+          <ul class="footer-links">
+            <li><a href="#">Tally/Accounting Sync</a></li>
+            <li><a href="#">Swiggy & Zomato API</a></li>
+            <li><a href="#">FSSAI License terms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Restaurant Management System. Built for high-efficiency food outlets. FSSAI Registrations Compliant.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ==========================================================================
+       2. INTERACTIVE PORTAL DASHBOARD FRAME
+       ========================================================================== -->
+  <div id="portal-page">
+    <div class="portal-container">
+      
+      <!-- Sidebar Navigation -->
+      <aside class="portal-sidebar">
+        <div>
+          <div class="portal-logo">
+            <div class="logo-icon" style="width:30px; height:30px; font-size:0.95rem;"><i class="fa-solid fa-utensils"></i></div>
+            <span>RMS Portal</span>
+          </div>
+          
+          <ul class="portal-nav">
+            <li class="portal-nav-item active" data-tab="billing">
+              <a href="javascript:void(0)"><i class="fa-solid fa-cash-register"></i> <span>POS Billing</span></a>
+            </li>
+            <li class="portal-nav-item" data-tab="kds">
+              <a href="javascript:void(0)"><i class="fa-solid fa-fire-burner"></i> <span>Kitchen Tickets</span></a>
+            </li>
+            <li class="portal-nav-item" data-tab="inventory">
+              <a href="javascript:void(0)"><i class="fa-solid fa-warehouse"></i> <span>Inventory Stock</span></a>
+            </li>
+            <li class="portal-nav-item" data-tab="delivery">
+              <a href="javascript:void(0)"><i class="fa-solid fa-truck-ramp-box"></i> <span>Order Delivery</span></a>
+            </li>
+            <li class="portal-nav-item" data-tab="crm">
+              <a href="javascript:void(0)"><i class="fa-solid fa-users"></i> <span>CRM Loyalty</span></a>
+            </li>
+            <li class="portal-nav-item" data-tab="analytics">
+              <a href="javascript:void(0)"><i class="fa-solid fa-chart-pie"></i> <span>Analytics</span></a>
+            </li>
+            <li class="portal-nav-item" data-tab="staff">
+              <a href="javascript:void(0)"><i class="fa-solid fa-user-clock"></i> <span>HR Shifts</span></a>
+            </li>
+            <li class="portal-nav-item" data-tab="marketing">
+              <a href="javascript:void(0)"><i class="fa-solid fa-tags"></i> <span>Marketing</span></a>
+            </li>
+            <li class="portal-nav-item" data-tab="cloud">
+              <a href="javascript:void(0)"><i class="fa-solid fa-cloud-arrow-up"></i> <span>Cloud Sync</span></a>
+            </li>
+            <li class="portal-nav-item" data-tab="security">
+              <a href="javascript:void(0)"><i class="fa-solid fa-shield-halved"></i> <span>Compliance & Logs</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Role Permissions & Info switcher -->
+        <div class="portal-user-info">
+          <div class="portal-user-lbl"><i class="fa-solid fa-user-shield"></i> User Role:</div>
+          <select class="portal-role-switch" id="role-selector">
+            <option value="admin">Admin (All Access)</option>
+            <option value="manager">Manager</option>
+            <option value="cashier">Cashier (POS Only)</option>
+            <option value="kitchen">Kitchen Staff (KDS Only)</option>
+          </select>
+        </div>
+      </aside>
+
+      <!-- Main Contents Pane -->
+      <main class="portal-main">
+        <header class="portal-topbar">
+          <div class="portal-header-title" id="portal-view-title">POS Billing</div>
+          <div class="topbar-right-pane">
+            <div class="sync-status-indicator" id="online-sync-lbl">
+              <span class="sync-dot"></span> Online
+            </div>
+            <div class="back-to-landing-btn" onclick="window.RMSApp.switchToMarketing()"><i class="fa-solid fa-circle-left"></i> Exit Portal</div>
+          </div>
+        </header>
+
+        <div class="portal-viewport">
+          
+          <!-- ==========================================
+               A. POS BILLING VIEW
+               ========================================== -->
+          <div class="portal-tab-content active" id="view-billing">
+            <!-- Dynamic Weather Recommendations from AI Module -->
+            <div class="ai-recommendation-panel" id="ai-rec-box">
+              <div style="font-size:0.85rem; font-weight:700; color:#1d4ed8; margin-bottom:8px;"><i class="fa-solid fa-robot"></i> Advanced AI Weather Menu Suggestions (Sunny)</div>
+              <div id="ai-recommendations-list">
+                <!-- suggestions loaded programmatically -->
+              </div>
+            </div>
+            
+            <div class="pos-container">
+              <!-- Left Grid Menu -->
+              <div class="pos-main-panel">
+                <div class="pos-categories" id="pos-category-container">
+                  <button class="pos-category-btn active" data-category="all">All Items</button>
+                  <button class="pos-category-btn" data-category="appetizers">Appetizers</button>
+                  <button class="pos-category-btn" data-category="mains">Mains</button>
+                  <button class="pos-category-btn" data-category="desserts">Desserts</button>
+                  <button class="pos-category-btn" data-category="beverages">Beverages</button>
+                </div>
+                
+                <div class="pos-items-grid" id="pos-menu-grid">
+                  <!-- menu items injected dynamically -->
+                </div>
+              </div>
+              
+              <!-- Right Billing Cart Sidebar -->
+              <div class="pos-cart-panel">
+                <div>
+                  <div class="cart-header">
+                    <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
+                      <span style="font-weight:700; color:#1e293b;">Active Order</span>
+                      <span id="active-cart-items-count" style="font-size:0.8rem; background:#cbd5e1; padding:2px 8px; border-radius:10px;">0 Items</span>
+                    </div>
+                    
+                    <!-- Billing parameters selectors -->
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:8px; margin-top:10px;">
+                      <select class="rms-form-control" style="padding:6px; font-size:0.8rem;" id="cart-order-mode">
+                        <option value="dine-in">Dine-in</option>
+                        <option value="takeaway">Takeaway</option>
+                        <option value="delivery">Delivery</option>
+                        <option value="bar-tab">Bar Tab</option>
+                      </select>
+                      
+                      <select class="rms-form-control" style="padding:6px; font-size:0.8rem;" id="cart-table-selector">
+                        <!-- tables list loaded dynamically -->
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <div class="cart-items-list" id="cart-items-container">
+                    <div style="text-align:center; color:#94a3b8; margin-top:40px;">Cart is empty. Tap items to build invoice.</div>
+                  </div>
+                </div>
+                
+                <div class="cart-summary">
+                  <div class="coupon-section">
+                    <input type="text" class="coupon-input" id="coupon-code-val" placeholder="Apply Code (WELCOME10)">
+                    <button class="coupon-btn" onclick="window.RMSApp.applyPromoCode()">Apply</button>
+                  </div>
+                  
+                  <div id="applied-coupon-banner" style="display:none; justify-content:space-between; align-items:center; background:#f0fdf4; border:1px solid #bbf7d0; border-radius:6px; padding:6px 12px; margin-bottom:12px; font-size:0.8rem; color:#166534;">
+                    <span>Code <strong id="coupon-code-lbl">WELCOME10</strong> Active</span>
+                    <a href="javascript:void(0)" onclick="window.RMSApp.removePromoCode()" style="color:#ef4444;"><i class="fa-solid fa-circle-xmark"></i></a>
+                  </div>
+                  
+                  <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal-val">₹0</span>
+                  </div>
+                  <div class="summary-row" id="cart-discount-row" style="display:none; color:#166534; font-weight:600;">
+                    <span>Discount</span>
+                    <span id="cart-discount-val">-₹0</span>
+                  </div>
+                  <div class="summary-row">
+                    <span>Tax (GST 18%)</span>
+                    <span id="cart-tax-val">₹0</span>
+                  </div>
+                  <div class="summary-row total">
+                    <span>Grand Total</span>
+                    <span id="cart-total-val">₹0</span>
+                  </div>
+                  
+                  <div class="pay-btn-group">
+                    <button class="pay-btn" id="pay-checkout-action-btn"><i class="fa-solid fa-circle-check"></i> Pay & Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               B. KITCHEN ORDER TICKETS (KDS) VIEW
+               ========================================== -->
+          <div class="portal-tab-content" id="view-kds">
+            <div class="section-header" style="text-align:left; margin-bottom:20px;">
+              <p class="section-subtitle">Real-time active KOT entries dispatched from terminal POS registers.</p>
+            </div>
+            <div class="table-grid" id="kds-tickets-grid">
+              <!-- KOT ticket cards injected dynamically -->
+            </div>
+          </div>
+
+          <!-- ==========================================
+               C. INVENTORY & STOCK VIEW
+               ========================================== -->
+          <div class="portal-tab-content" id="view-inventory">
+            <div class="inventory-layout">
+              <div class="kpi-row">
+                <div class="kpi-card" style="border-left:4px solid #f59e0b;">
+                  <div>
+                    <div class="kpi-title">Auto Alerts</div>
+                    <div class="kpi-value" id="low-stock-kpi-val" style="color:#d97706;">2 Low Threshold</div>
+                  </div>
+                  <div class="kpi-icon-box orders"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                </div>
+                <div class="kpi-card" style="border-left:4px solid #ef4444;">
+                  <div>
+                    <div class="kpi-title">Waste Loss</div>
+                    <div class="kpi-value" id="waste-loss-kpi-val" style="color:#b91c1c;">₹354</div>
+                  </div>
+                  <div class="kpi-icon-box waste"><i class="fa-solid fa-trash-can"></i></div>
+                </div>
+              </div>
+              
+              <!-- Ingredients Inventory levels -->
+              <div class="chart-card-box">
+                <div class="chart-title-lbl"><i class="fa-solid fa-boxes-stacked"></i> Raw Ingredients Levels</div>
+                <div class="stock-grid" id="inventory-stock-grid">
+                  <!-- stock cards loaded dynamically -->
+                </div>
+              </div>
+
+              <!-- Costing recipes & audits -->
+              <div class="charts-grid">
+                <div class="chart-card-box">
+                  <div class="chart-title-lbl"><i class="fa-solid fa-scale-balanced"></i> Dish Recipe Margin Calculator</div>
+                  <table class="recipe-table">
+                    <thead>
+                      <tr>
+                        <th>Menu Item</th>
+                        <th>Recipe Cost (Avg)</th>
+                        <th>Sale Price</th>
+                        <th>Margin %</th>
+                      </tr>
+                    </thead>
+                    <tbody id="recipes-margin-body">
+                      <!-- margins listings dynamically -->
+                    </tbody>
+                  </table>
+                </div>
+
+                <!-- Waste logging panel -->
+                <div class="chart-card-box">
+                  <div class="chart-title-lbl"><i class="fa-solid fa-circle-exclamation"></i> Log Stock Wastage / Expiry</div>
+                  <form id="waste-log-form" onsubmit="window.RMSApp.handleWasteSubmission(event)" style="display:flex; flex-direction:column; gap:12px;">
+                    <div class="rms-form-group" style="margin-bottom:0;">
+                      <label class="rms-form-label">Select Ingredient</label>
+                      <select class="rms-form-control" id="waste-select-ing" required></select>
+                    </div>
+                    <div class="rms-form-group" style="margin-bottom:0;">
+                      <label class="rms-form-label">Wasted Quantity</label>
+                      <input type="number" step="0.01" class="rms-form-control" id="waste-qty" placeholder="E.g. 1.5" required>
+                    </div>
+                    <div class="rms-form-group" style="margin-bottom:0;">
+                      <label class="rms-form-label">Audit Reason</label>
+                      <input type="text" class="rms-form-control" id="waste-reason" placeholder="E.g. Rotten/Spoiled" required>
+                    </div>
+                    <button class="btn-primary" style="border-radius:6px; margin-top:5px;"><i class="fa-solid fa-circle-plus"></i> Audit Waste Entry</button>
+                  </form>
+
+                  <h4 style="margin-top:20px; margin-bottom:10px; font-size:0.9rem;">Recent Wastage Audits</h4>
+                  <table class="waste-table" style="font-size:0.8rem;">
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Item</th>
+                        <th>Qty</th>
+                        <th>Loss (₹)</th>
+                        <th>Reason</th>
+                      </tr>
+                    </thead>
+                    <tbody id="waste-logs-body">
+                      <!-- waste entries inserted dynamically -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               D. ORDER & DELIVERY VIEW
+               ========================================== -->
+          <div class="portal-tab-content" id="view-delivery">
+            <div class="delivery-grid">
+              <!-- Active orders progress tracker -->
+              <div>
+                <div class="chart-card-box">
+                  <div class="chart-title-lbl"><i class="fa-solid fa-clock-rotate-left"></i> Active Delivery & Rider Dispatch</div>
+                  <div class="delivery-order-list" id="delivery-orders-list-box">
+                    <!-- Delivery cards injected dynamically -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- Swiggy/Zomato feeds -->
+              <div>
+                <div class="chart-card-box" style="margin-bottom:20px;">
+                  <div class="chart-title-lbl"><i class="fa-solid fa-arrows-spin"></i> Zomato & Swiggy Feed</div>
+                  <div id="aggregator-feed-box">
+                    <!-- feeds loaded dynamically -->
+                  </div>
+                </div>
+
+                <!-- QR code table reservation simulator -->
+                <div class="qr-simulator">
+                  <div style="font-weight:700; font-size:0.95rem; color:#0f172a;"><i class="fa-solid fa-qrcode"></i> Scan Table QR Simulator</div>
+                  <p style="font-size:0.75rem; color:#64748b; margin-top:4px;">Simulates customer scanning the tabletop QR code to submit orders.</p>
+                  <div class="qr-code-img"><i class="fa-solid fa-qrcode" style="font-size:6.0rem; color:#0f172a;"></i></div>
+                  <button class="btn-outline" style="font-size:0.8rem; padding:6px 15px;" onclick="window.RMSApp.openQRMenuSimulator()"><i class="fa-solid fa-mobile-screen-button"></i> Launch Mobile Menu Web View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               E. CRM & LOYALTY VIEW
+               ========================================== -->
+          <div class="portal-tab-content" id="view-crm">
+            <div class="crm-grid">
+              <!-- Customers profiles database -->
+              <div>
+                <div class="chart-card-box">
+                  <div class="chart-title-lbl"><i class="fa-solid fa-address-book"></i> Customer Profiles & Loyalty Database</div>
+                  
+                  <div style="display:flex; gap:10px; margin-bottom:15px;">
+                    <input type="text" class="rms-form-control" id="crm-search-phone" placeholder="Search phone number...">
+                    <button class="btn-primary" style="border-radius:6px; font-size:0.85rem;" onclick="window.RMSApp.handleCRMSearch()"><i class="fa-solid fa-magnifying-glass"></i> Lookup</button>
+                  </div>
+                  
+                  <table class="standard-data-table">
+                    <thead>
+                      <tr>
+                        <th>Customer</th>
+                        <th>Phone</th>
+                        <th>Visits</th>
+                        <th>Points</th>
+                        <th>Tier</th>
+                        <th>Favorite</th>
+                      </tr>
+                    </thead>
+                    <tbody id="crm-customer-table-body">
+                      <!-- customer database entries -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- Targeted marketing promotions scheduler -->
+              <div>
+                <div class="chart-card-box" style="margin-bottom:20px;">
+                  <div class="chart-title-lbl"><i class="fa-solid fa-paper-plane"></i> Launch Targeted SMS Campaign</div>
+                  <div id="campaign-promos-box">
+                    <!-- campaign templates list injected dynamically -->
+                  </div>
+                </div>
+
+                <!-- Dining feedback reviews log -->
+                <div class="chart-card-box">
+                  <div class="chart-title-lbl"><i class="fa-solid fa-comments"></i> Post-Dining Customer Reviews</div>
+                  <div class="feedback-card-list" id="crm-feedback-logs-box">
+                    <!-- feedback entries -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               F. ANALYTICS & CHARTS VIEW
+               ========================================== -->
+          <div class="portal-tab-content" id="view-analytics">
+            <div class="analytics-container">
+              <!-- KPI overview counters -->
+              <div class="kpi-row">
+                <div class="kpi-card">
+                  <div>
+                    <div class="kpi-title">Total Sales</div>
+                    <div class="kpi-value">₹1,46,100</div>
+                    <div class="kpi-change up"><i class="fa-solid fa-arrow-trend-up"></i> +12.4% vs last week</div>
+                  </div>
+                  <div class="kpi-icon-box sales"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+                </div>
+                <div class="kpi-card">
+                  <div>
+                    <div class="kpi-title">Total Orders</div>
+                    <div class="kpi-value">448</div>
+                    <div class="kpi-change up"><i class="fa-solid fa-arrow-trend-up"></i> +5.2% vs last week</div>
+                  </div>
+                  <div class="kpi-icon-box orders"><i class="fa-solid fa-receipt"></i></div>
+                </div>
+                <div class="kpi-card">
+                  <div>
+                    <div class="kpi-title">Food Waste Cost</div>
+                    <div class="kpi-value">₹556</div>
+                    <div class="kpi-change down"><i class="fa-solid fa-arrow-trend-down"></i> -8.5% waste reduction</div>
+                  </div>
+                  <div class="kpi-icon-box waste"><i class="fa-solid fa-dumpster"></i></div>
+                </div>
+              </div>
+
+              <!-- SVG Line chart & Bar charts -->
+              <div class="charts-grid">
+                <div class="chart-card-box">
+                  <div class="chart-title-lbl"><i class="fa-solid fa-chart-line"></i> Weekly Sales Trends (₹)</div>
+                  <div class="svg-chart-container" id="sales-line-chart-container">
+                    <!-- Line chart generated programmatically -->
+                  </div>
+                </div>
+                <div class="chart-card-box">
+                  <div class="chart-title-lbl"><i class="fa-solid fa-chart-bar"></i> Hourly Peak Traffic (Orders count)</div>
+                  <div class="svg-chart-container" id="peak-hours-bar-chart-container">
+                    <!-- Bar chart generated programmatically -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- Menu item profitability matrix -->
+              <div class="chart-card-box">
+                <div class="chart-title-lbl"><i class="fa-solid fa-fire"></i> Best-Selling Menu Items Profit Matrix</div>
+                <table class="standard-data-table">
+                  <thead>
+                    <tr>
+                      <th>Dish Item</th>
+                      <th>Quantity Sold</th>
+                      <th>Gross Revenue</th>
+                      <th>Profitability</th>
+                    </tr>
+                  </thead>
+                  <tbody id="analytics-top-items-body">
+                    <!-- best sellers margin analysis -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               G. HR SHIFTS & ROSTER VIEW
+               ========================================== -->
+          <div class="portal-tab-content" id="view-staff">
+            <div class="staff-grid">
+              <!-- shifts planner -->
+              <div>
+                <div class="chart-card-box">
+                  <div class="chart-title-lbl"><i class="fa-solid fa-calendar-days"></i> Roster Shifts Calendar</div>
+                  
+                  <form id="shift-planner-form" onsubmit="window.RMSApp.handleShiftScheduling(event)" style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:20px;">
+                    <div class="rms-form-group" style="margin-bottom:0;">
+                      <label class="rms-form-label">Employee</label>
+                      <select class="rms-form-control" id="shift-select-staff" required></select>
+                    </div>
+                    <div class="rms-form-group" style="margin-bottom:0;">
+                      <label class="rms-form-label">Day</label>
+                      <select class="rms-form-control" id="shift-day" required>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                      </select>
+                    </div>
+                    <div class="rms-form-group" style="margin-bottom:0; grid-column: span 2;">
+                      <label class="rms-form-label">Shift Hours & Timing</label>
+                      <input type="text" class="rms-form-control" id="shift-time" placeholder="E.g., 09:00 AM - 05:00 PM" required>
+                    </div>
+                    <input type="hidden" id="shift-hours" value="8">
+                    <button class="btn-primary" style="grid-column: span 2; border-radius:6px; margin-top:5px;"><i class="fa-solid fa-calendar-plus"></i> Allocate Shift</button>
+                  </form>
+                  
+                  <div class="shift-roster-list" id="shift-calendar-container">
+                    <!-- shifts injected dynamically -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- Training guides -->
+              <div>
+                <div class="chart-card-box">
+                  <div class="chart-title-lbl"><i class="fa-solid fa-graduation-cap"></i> Onboarding Menu & POS Training Tutorials</div>
+                  <div class="tutorial-list" id="staff-tutorials-box">
+                    <!-- tutorials list -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               H. MARKETING & PROMOTIONS VIEW
+               ========================================== -->
+          <div class="portal-tab-content" id="view-marketing">
+            <div class="marketing-container">
+              <div class="charts-grid">
+                <!-- Create Campaign Coupon -->
+                <div class="chart-card-box">
+                  <div class="chart-title-lbl"><i class="fa-solid fa-plus"></i> Generate Dynamic Campaign Coupon</div>
+                  <form id="coupon-creator-form" onsubmit="window.RMSApp.handleCouponCreation(event)" style="display:flex; flex-direction:column; gap:12px;">
+                    <div class="rms-form-group" style="margin-bottom:0;">
+                      <label class="rms-form-label">Coupon Code</label>
+                      <input type="text" class="rms-form-control" id="coupon-code" placeholder="E.g., FESTIVE20" required style="text-transform:uppercase;">
+                    </div>
+                    <div class="rms-form-group" style="margin-bottom:0;">
+                      <label class="rms-form-label">Discount Type</label>
+                      <select class="rms-form-control" id="coupon-type" required>
+                        <option value="percent">Percentage Off (%)</option>
+                        <option value="fixed">Fixed Flat Discount (₹)</option>
+                      </select>
+                    </div>
+                    <div class="rms-form-group" style="margin-bottom:0;">
+                      <label class="rms-form-label">Value</label>
+                      <input type="number" class="rms-form-control" id="coupon-value" placeholder="E.g., 20" required>
+                    </div>
+                    <div class="rms-form-group" style="margin-bottom:0;">
+                      <label class="rms-form-label">Min Bill Threshold (₹)</label>
+                      <input type="number" class="rms-form-control" id="coupon-min-bill" placeholder="E.g., 300" required>
+                    </div>
+                    <button class="btn-primary" style="border-radius:6px; margin-top:5px;"><i class="fa-solid fa-ticket"></i> Add Coupon to Registers</button>
+                  </form>
+                </div>
+
+                <!-- whatsapp settings -->
+                <div class="chart-card-box">
+                  <div class="chart-title-lbl"><i class="fa-solid fa-gears"></i> Marketing Notifications & WhatsApp Settings</div>
+                  <p style="font-size:0.8rem; color:#64748b; margin-bottom:15px;">Enable auto-sending promotional updates and WhatsApp PDF bills directly to user phone numbers.</p>
+                  
+                  <div class="marketing-switch-row">
+                    <div>
+                      <div style="font-weight:600; font-size:0.85rem; color:#1e293b;">WhatsApp Digital Billing</div>
+                      <div style="font-size:0.75rem; color:#64748b;">Direct invoice PDFs sent to client numbers.</div>
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" id="chk-whatsapp-billing" checked onchange="window.RMSMarketing.toggleChannel('whatsappBilling')">
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                  <div class="marketing-switch-row">
+                    <div>
+                      <div style="font-weight:600; font-size:0.85rem; color:#1e293b;">WhatsApp KOT Status updates</div>
+                      <div style="font-size:0.75rem; color:#64748b;">Alert customer when food is ready.</div>
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" id="chk-whatsapp-kot" onchange="window.RMSMarketing.toggleChannel('whatsappKOTAlert')">
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                  <div class="marketing-switch-row">
+                    <div>
+                      <div style="font-weight:600; font-size:0.85rem; color:#1e293b;">Target SMS Campaigns</div>
+                      <div style="font-size:0.75rem; color:#64748b;">Periodic discount triggers for inactive segments.</div>
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" id="chk-sms-marketing" checked onchange="window.RMSMarketing.toggleChannel('smsMarketing')">
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Festive banner layouts -->
+              <div class="chart-card-box">
+                <div class="chart-title-lbl"><i class="fa-solid fa-wand-magic-sparkles"></i> Seasonal Campaign Templates</div>
+                <div class="marketing-card-grid" id="marketing-campaign-templates">
+                  <!-- cards loaded dynamically -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               I. CLOUD SYNC & LOCAL CONFIGS VIEW
+               ========================================== -->
+          <div class="portal-tab-content" id="view-cloud">
+            <div class="cloud-container">
+              <!-- offline toggler -->
+              <div class="offline-alert-box" id="offline-alert-panel">
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <i class="fa-solid fa-circle-exclamation" style="font-size:1.3rem;"></i>
+                  <div>
+                    <div style="font-weight:700;">Simulated Connectivity Status: Online</div>
+                    <div style="font-size:0.75rem;">Orders will sync instantly with the cloud database servers.</div>
+                  </div>
+                </div>
+                <button class="btn-primary" style="background:#dc2626; border-radius:6px; font-size:0.8rem; padding:6px 12px;" id="toggle-network-status-btn" onclick="window.RMSApp.toggleNetworkConnection()">Simulate Offline Mode</button>
+              </div>
+
+              <!-- sync queue progress -->
+              <div class="charts-grid">
+                <div class="chart-card-box">
+                  <div class="chart-title-lbl"><i class="fa-solid fa-arrows-spin"></i> Offline Local Storage Sync Buffer</div>
+                  <p style="font-size:0.8rem; color:#64748b; margin-bottom:15px;">Simulates billing database sync. If offline, bills are queued and cached locally. Clicking sync pushes them to the cloud.</p>
+                  
+                  <div style="background:#f1f5f9; border-radius:8px; padding:20px; text-align:center;">
+                    <div style="font-size:0.85rem; font-weight:600; color:#334155; margin-bottom:10px;">Queued Sync Orders</div>
+                    <div style="font-size:2.0rem; font-weight:800; color:#0f172a; margin-bottom:15px;" id="offline-queue-counter">0 Bills</div>
+                    <button class="btn-primary" style="border-radius:6px;" id="trigger-sync-btn" onclick="window.RMSApp.triggerCloudSync()" disabled>Synchronize Buffer Cache</button>
+                  </div>
+
+                  <!-- Sync Progress bar -->
+                  <div id="sync-progress-bar-box" style="margin-top:20px; display:none;">
+                    <div style="display:flex; justify-content:space-between; font-size:0.8rem; font-weight:600; margin-bottom:5px;">
+                      <span>Syncing database records...</span>
+                      <span id="sync-progress-lbl">0%</span>
+                    </div>
+                    <div style="background:#e2e8f0; height:8px; border-radius:4px; overflow:hidden;">
+                      <div style="background:#22c55e; height:100%; width:0%;" id="sync-progress-fill-bar"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- multi-store selector -->
+                <div class="chart-card-box">
+                  <div class="chart-title-lbl"><i class="fa-solid fa-network-wired"></i> Branch Location POS Registry</div>
+                  <p style="font-size:0.8rem; color:#64748b; margin-bottom:15px;">Centralized branch selection index for monitoring multi-location dashboards.</p>
+                  <div class="branch-list" id="cloud-branches-box">
+                    <!-- branch items loaded dynamically -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               J. COMPLIANCE & AUDIT LOGS VIEW
+               ========================================== -->
+          <div class="portal-tab-content" id="view-security">
+            <div class="charts-grid">
+              <!-- Compliance panel -->
+              <div class="chart-card-box">
+                <div class="chart-title-lbl"><i class="fa-solid fa-file-invoice-dollar"></i> GST Compliance & FSSAI Standards</div>
+                <form id="compliance-config-form" onsubmit="event.preventDefault(); alert('Compliance parameters updated!');" style="display:flex; flex-direction:column; gap:12px;">
+                  <div class="rms-form-group" style="margin-bottom:0;">
+                    <label class="rms-form-label">CGST Rate (%)</label>
+                    <input type="number" class="rms-form-control" id="cgst-rate" value="9" required>
+                  </div>
+                  <div class="rms-form-group" style="margin-bottom:0;">
+                    <label class="rms-form-label">SGST Rate (%)</label>
+                    <input type="number" class="rms-form-control" id="sgst-rate" value="9" required>
+                  </div>
+                  <div class="rms-form-group" style="margin-bottom:0;">
+                    <label class="rms-form-label">FSSAI License Registration No.</label>
+                    <input type="text" class="rms-form-control" id="fssai-lic-no" value="22822034000109" required>
+                  </div>
+                  <button class="btn-primary" style="border-radius:6px; margin-top:5px;"><i class="fa-solid fa-floppy-disk"></i> Save Compliance Config</button>
+                </form>
+              </div>
+
+              <!-- security specs -->
+              <div class="chart-card-box">
+                <div class="chart-title-lbl"><i class="fa-solid fa-fingerprint"></i> System Security Protocols</div>
+                <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px; padding:15px; font-size:0.8rem; line-height:1.6; color:#475569;">
+                  <div style="margin-bottom:10px;"><i class="fa-solid fa-lock" style="color:#22c55e;"></i> <strong>Data Encryption:</strong> All database REST transactions run on TLS 1.3/HTTPS, and client phone numbers are stored encrypted at rest.</div>
+                  <div style="margin-bottom:10px;"><i class="fa-solid fa-id-card-clip" style="color:#22c55e;"></i> <strong>Permissions Model:</strong> Strict Role-based access controls (RBAC) restrict Cashiers from view analytics, shifts schedules, or audit logs.</div>
+                  <div><i class="fa-solid fa-rotate-left" style="color:#22c55e;"></i> <strong>Backup policies:</strong> Auto-backup sync scheduler runs daily at 02:00 AM with point-in-time recovery hooks.</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Audit log terminal terminal-box -->
+            <div class="chart-card-box" style="margin-top:20px;">
+              <div class="chart-title-lbl"><i class="fa-solid fa-terminal"></i> Terminal System Audit Logs (Admin Access Only)</div>
+              <div class="audit-log-container">
+                <div class="audit-log-header">RMS Terminal Console v1.0.0 - Session Log Stream</div>
+                <div id="security-audit-console-rows">
+                  <!-- audit logs lines injected dynamically -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       3. OVERLAY MODALS
+       ========================================================================== -->
+  
+  <!-- A. Cart Item Modifiers Selection Modal -->
+  <div class="modifiers-modal" id="pos-modifiers-modal">
+    <div class="modifiers-content">
+      <h3 id="modifier-item-title" style="margin-bottom:15px; color:#0f172a; font-weight:700;">Margherita Pizza</h3>
+      <input type="hidden" id="modifier-item-id">
+      
+      <div class="modifier-group">
+        <div class="modifier-group-title">Select Size</div>
+        <div class="modifier-options" id="modifier-sizes-container">
+          <!-- sizes radios -->
+        </div>
+      </div>
+      
+      <div class="modifier-group">
+        <div class="modifier-group-title">Add Extras / Toppings</div>
+        <div class="modifier-options" id="modifier-extras-container">
+          <!-- extras checkboxes -->
+        </div>
+      </div>
+      
+      <div style="display:flex; gap:12px; margin-top:24px; justify-content:flex-end;">
+        <button class="btn-outline" style="font-size:0.85rem; padding:8px 18px;" onclick="window.RMSApp.closeModifiersModal()">Cancel</button>
+        <button class="btn-accent" style="font-size:0.85rem; padding:8px 18px;" onclick="window.RMSApp.confirmModifiersSelection()">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- B. Split Payment & Coupon checkout Modal -->
+  <div class="rms-overlay-modal" id="pos-checkout-modal">
+    <div class="rms-overlay-content">
+      <h3 style="margin-bottom:15px; color:#0f172a; font-weight:700;"><i class="fa-solid fa-wallet"></i> Pay & Settlement</h3>
+      
+      <div class="rms-form-group">
+        <label class="rms-form-label">Customer Contact Phone (For Loyalty Points & Digital Bill)</label>
+        <input type="tel" class="rms-form-control" id="checkout-cust-phone" placeholder="E.g., 9999988888" value="9999988888">
+      </div>
+
+      <div class="rms-form-group">
+        <label class="rms-form-label">Payment Settlement Mode</label>
+        <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:8px;">
+          <input type="radio" name="payment-method" id="pay-cash" value="Cash" checked style="display:none;">
+          <label for="pay-cash" class="modifier-radio-label" style="text-align:center;">Cash</label>
+          
+          <input type="radio" name="payment-method" id="pay-upi" value="UPI" style="display:none;">
+          <label for="pay-upi" class="modifier-radio-label" style="text-align:center;">UPI / QR</label>
+          
+          <input type="radio" name="payment-method" id="pay-card" value="Card" style="display:none;">
+          <label for="pay-card" class="modifier-radio-label" style="text-align:center;">Card</label>
+        </div>
+      </div>
+
+      <div class="rms-form-group">
+        <label class="rms-form-label">Split Bill Options</label>
+        <select class="rms-form-control" id="checkout-split-mode" onchange="window.RMSApp.handleSplitPaymentToggle()">
+          <option value="none">Single Payee (100%)</option>
+          <option value="2">Split 2 Ways (50% each)</option>
+          <option value="3">Split 3 Ways (33% each)</option>
+        </select>
+      </div>
+
+      <div id="split-price-indicator" style="display:none; background:#f8fafc; border:1px solid #cbd5e1; border-radius:6px; padding:10px 12px; margin-bottom:15px; font-size:0.85rem; font-weight:600; color:#334155;">
+        Split Amount: <span id="split-value-lbl">₹0</span> per person.
+      </div>
+      
+      <div style="display:flex; gap:12px; margin-top:24px; justify-content:flex-end;">
+        <button class="btn-outline" style="font-size:0.85rem; padding:8px 18px;" onclick="window.RMSApp.closeCheckoutModal()">Cancel</button>
+        <button class="btn-accent" style="font-size:0.85rem; padding:8px 18px;" onclick="window.RMSApp.completeCheckoutSettlement()">Process Settlement & Invoice</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- C. Custom Invoice PDF modal -->
+  <div class="rms-overlay-modal" id="pos-invoice-modal">
+    <div class="rms-overlay-content" style="width: 420px;">
+      <h3 style="margin-bottom:15px; color:#0f172a; font-weight:700;"><i class="fa-solid fa-file-lines"></i> FSSAI & GST Tax Invoice</h3>
+      
+      <div class="receipt-invoice-box" id="invoice-text-receipt">
+        <!-- Text invoice receipt rendered dynamically -->
+      </div>
+      
+      <div style="display:flex; gap:12px; justify-content:flex-end;">
+        <button class="btn-outline" style="font-size:0.85rem; padding:8px 18px;" onclick="window.RMSApp.closeInvoiceModal()"><i class="fa-solid fa-circle-xmark"></i> Close</button>
+        <button class="btn-primary" style="font-size:0.85rem; padding:8px 18px;" onclick="window.RMSApp.downloadReceiptMock()"><i class="fa-solid fa-file-pdf"></i> Download PDF Invoice</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- D. Direct QR Table Menu Simulator Overlay -->
+  <div class="rms-overlay-modal" id="qr-menu-simulator-modal">
+    <div class="rms-overlay-content" style="width:340px; padding:10px; background:#1e293b; border-radius:32px; border:8px solid #0f172a;">
+      <div class="qr-phone-frame" style="width:100%; height:550px; border:none; margin:0;">
+        <div class="qr-phone-header">
+          <span>Table 4 Order Portal</span>
+          <a href="javascript:void(0)" onclick="window.RMSApp.closeQRMenuSimulator()" style="color:#f87171;"><i class="fa-solid fa-circle-xmark" style="font-size:1.1rem;"></i></a>
+        </div>
+        <div class="qr-phone-content">
+          <div style="text-align:center; margin-bottom:12px;">
+            <div style="font-size:0.75rem; color:#64748b; font-weight:600;">Welcome to</div>
+            <div style="font-weight:800; font-size:1.1rem; color:#0f172a;">Downtown Bistro</div>
+            <div style="font-size:0.65rem; color:#22c55e; font-weight:600; margin-top:2px;"><i class="fa-solid fa-circle-check"></i> GST & FSSAI Registered</div>
+          </div>
+          
+          <div style="font-size:0.8rem; font-weight:700; color:#1e293b; border-bottom:1px solid #e2e8f0; padding-bottom:4px; margin-bottom:10px;">Quick Popular Dishes</div>
+          
+          <div style="display:flex; flex-direction:column; gap:8px;" id="qr-mock-menu-list">
+            <!-- items injected programmatically -->
+          </div>
+
+          <div style="margin-top:20px; border-top:1px solid #e2e8f0; padding-top:12px;">
+            <button class="btn-accent" style="width:100%; border-radius:6px; font-size:0.85rem; padding:8px;" onclick="window.RMSApp.submitQROrderDirectly()"><i class="fa-solid fa-bowl-food"></i> Order Direct to Kitchen (KOT)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==========================================================================
+       4. SCRIPTS INJECTION
+       ========================================================================== -->
+  <!-- Feature Modules -->
+  <script src="features/security-compliance/security.js"></script>
+  <script src="features/billing-pos/billing.js"></script>
+  <script src="features/inventory-stock/inventory.js"></script>
+  <script src="features/order-delivery/delivery.js"></script>
+  <script src="features/crm-loyalty/crm.js"></script>
+  <script src="features/analytics-reporting/analytics.js"></script>
+  <script src="features/staff-hr/staff.js"></script>
+  <script src="features/marketing-promotions/marketing.js"></script>
+  <script src="features/mobile-cloud/cloud.js"></script>
+  <script src="features/advanced-ai/advanced.js"></script>
+  
+  <!-- Main Orchestrator -->
+  <script src="app.js"></script>
+
+</body>
+</html>
